@@ -1,5 +1,5 @@
 import NIO
-
+import Combine
 public final class Request: CustomStringConvertible {
     public let application: Application
 
@@ -20,6 +20,7 @@ public final class Request: CustomStringConvertible {
     /// when the `body` property is mutated.
     public var headers: HTTPHeaders
     
+    public var disposeBag: Set<AnyCancellable> = []
     internal var isKeepAlive: Bool
     
     // MARK: Metadata
