@@ -33,6 +33,10 @@ Vapor is a web framework for Swift. It provides a beautifully expressive and eas
 
 Take a look at some of the [awesome stuff](https://github.com/Cellane/awesome-vapor) created with Vapor.
 
+### 🧩 Combine
+
+ This's an expermintal fork from Vapor, adding combine Support to it [Discord](http://vapor.team).
+
 ### 💧 Community
 
 Join the welcoming community of fellow Vapor developers on [Discord](http://vapor.team).
