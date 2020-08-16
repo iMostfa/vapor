@@ -12,9 +12,10 @@ while it's already working good for vapor and other server frameworks , writing 
 1- writing asynchronous code in the tradational way of callbacks and clousres
 2- writing asynchronous code using the avaliable frameworks for RFP like RxSwift and Combine
 
-using 2nd option seems a better idea since it would really fit in the environemnt, But for some reasons, as disuccssed [here](https://github.com/vapor/vapor/issues/1238) RxSwift won't be the best option because it's a big depdency
+using 2nd option seems a better idea since it would really fit in the environemnt, But for some reasons, as disuccssed [here](https://github.com/vapor/vapor/issues/1238) 
+RxSwift won't be the best option because it's a big dependency
 
- i believe, that combine is a better alternative, also swiftNIO is going to have better support for [Combine] (https://forums.swift.org/t/will-swiftnio-adapt-to-the-new-combine-framework/25166/2) 
+ i believe, that combine is a better alternative, also swiftNIO is going to have better support for [Combine](https://forums.swift.org/t/will-swiftnio-adapt-to-the-new-combine-framework/25166/2) 
 
 
 ### 🧩 Combine Support 
