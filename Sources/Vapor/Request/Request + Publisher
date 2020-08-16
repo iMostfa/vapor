@@ -1,0 +1,16 @@
+import Combine
+import Vapor
+
+extension Publisher {
+    
+    func promise(on req: Vapor.Request) -> EventLoopFuture<Output>   {
+        let eventLoop = req.eventLoop
+        let promise = req.eventLoop.makePromise(of: Output.self)
+        eventLoop.execute {
+            self.sink(receiveCompletion: {_ in}, receiveValue: { promise.succeed($0) })
+                .store(in: &req.disposeBag)
+        }
+        return promise.futureResult
+    }
+    
+}
